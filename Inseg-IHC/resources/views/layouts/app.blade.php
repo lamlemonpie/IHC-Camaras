@@ -119,8 +119,8 @@
                         <i class="fa fa-bars"></i>
                     </button>
 
-                     <a class="navbar-brand" href="{{ url('/') }}">
-                    {{ config('app.name', 'Laravel') }}
+                    <a class="navbar-brand" href="{{ url('/') }}">
+                     &nbsp; {{ config('app.name', 'Laravel') }}
                     </a>
 
                     <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -164,8 +164,25 @@
 
             <br>
               <div class="body-color">
-                @yield('content')
-              </div>
+                <div class="container">
+                  <div class="row">
+                    <div class="col-sm-6">
+                   
+                      <h2>16:9 Responsive Aspect Ratio</h2>
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="//www.youtube.com/embed/ePbKGoIGAXY"></iframe>
+                </div>
+                    </div>
+                    <div class="col-sm-6">
+                 
+
+                      <h2>4:3 Responsive Aspect Ratio</h2>
+                <div class="embed-responsive embed-responsive-4by3">
+                    <iframe class="embed-responsive-item" src="//www.youtube.com/embed/ePbKGoIGAXY"></iframe>
+                </div>
+                    </div>
+                  </div>
+               </div>
         </div>
     </div>
 
