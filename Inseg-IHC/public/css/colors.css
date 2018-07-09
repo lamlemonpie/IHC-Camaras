@@ -1,0 +1,70 @@
+:root {
+  --main-nav-color: #333A42;
+  --main-bg-color: #485058;
+  --main-bg: #A6A5A1;
+  --main-text-color: #F1ECE9;
+  --main-alert-color: #D7443F;
+}
+
+/* :root {
+  --main-nav-color: #333A42;
+  --main-bg-color: #485058;
+  --main-bg: #A6A5A1;
+  --main-text-color: #F1ECE9;
+  --main-alert-color: #D7443F;
+}*/
+
+body{
+  background-color: var(--main-bg-color) !important;
+
+}
+
+/*  Navbar */
+.navbar-custom {
+    background-color: var(--main-nav-color) !important;
+}
+/* change the brand and text color */
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+    color: var(--main-text-color);
+}
+/* change the link color */
+.navbar-custom .navbar-nav .nav-link {
+    color: var(--main-text-color);
+}
+/* change the color of active or hovered links */
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+    color: #ffffff;
+}
+
+
+/* Cards */
+.card{
+  border-color: var(--main-nav-color) !important;
+  color: var(--main-text-color);
+}
+.card .card-header{
+  background-color: var(--main-nav-color) !important;
+}
+.card .card-body{
+  background-color: var(--main-bg-color);
+}
+
+
+.text-color{
+  color: var(--main-text-color);
+}
+
+.back-color{
+  background-color: var(--main-bg-color);
+}
+
+.bord-color{
+  border-color: var(--main-nav-color);
+}
+
+
+.alert-color{
+  background-color: var(--main-alert-color);
+}
