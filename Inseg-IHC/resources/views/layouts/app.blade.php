@@ -167,19 +167,16 @@
                 <div class="container">
                   <div class="row">
                     <div class="col-sm-6">
-                   
-                      <h2>16:9 Responsive Aspect Ratio</h2>
-                <div class="embed-responsive embed-responsive-16by9">
-                    <iframe class="embed-responsive-item" src="//www.youtube.com/embed/ePbKGoIGAXY"></iframe>
-                </div>
+                        <!--<h2>16:9 Responsive Aspect Ratio</h2>-->
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="//www.youtube.com/embed/ePbKGoIGAXY"></iframe>
+                        </div>
                     </div>
                     <div class="col-sm-6">
-                 
-
-                      <h2>4:3 Responsive Aspect Ratio</h2>
-                <div class="embed-responsive embed-responsive-4by3">
-                    <iframe class="embed-responsive-item" src="//www.youtube.com/embed/ePbKGoIGAXY"></iframe>
-                </div>
+                        <!--<h2>4:3 Responsive Aspect Ratio</h2>-->
+                        <div class="embed-responsive embed-responsive-4by3">
+                            <iframe class="embed-responsive-item" src="//www.youtube.com/embed/ePbKGoIGAXY"></iframe>
+                        </div>
                     </div>
                   </div>
                </div>
