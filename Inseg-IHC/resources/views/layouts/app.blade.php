@@ -55,7 +55,7 @@
         <!-- Sidebar  -->
         <nav class="active" id="sidebar">
             <div class="sidebar-header">
-                <h3>Bootstrap Sidebar</h3>
+                <h3>Menú de Configuración</h3>
             </div>
 
             <ul class="list-unstyled components">
@@ -120,11 +120,12 @@
                     </button>
 
                     <a class="navbar-brand" href="{{ url('/') }}">
-                     &nbsp;{{ config('app.name', 'Laravel') }}
+                     &nbsp; <!--{{ config('app.name', 'Laravel') }}-->
+                     <img width="150px" height="40px"src="{{asset('logo.png')}}">
                     </a>
 
                     <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <i class="fas fa-align-justify"></i>
+                        <i class="fa fa-user-circle"></i>
                     </button>
 
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -138,12 +139,10 @@
                                     <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
                                 </li>
                             @else
+                            <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>{{ Auth::user()->name }} <span class="caret"></span>
+                            </a>
+                            
                             <li class="nav-item dropdown">
-                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                    {{ Auth::user()->name }} <span class="caret"></span>
-
-                                </a>
-
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
@@ -156,6 +155,7 @@
                                     </form>
                                 </div>
                             </li>
+                            
                             @endguest
                         </ul>
                     </div>

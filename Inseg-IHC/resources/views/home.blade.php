@@ -40,7 +40,6 @@
         <div class="embed-responsive embed-responsive-4by3">
             <iframe class="embed-responsive-item" src="//www.youtube.com/embed/ePbKGoIGAXY"></iframe>
         </div>
-    </div>
 
   </div>
   <br><br>
@@ -61,9 +60,9 @@
         <div class="embed-responsive embed-responsive-4by3">
             <iframe class="embed-responsive-item" src="//www.youtube.com/embed/ePbKGoIGAXY"></iframe>
         </div>
+
+      </div>
+
     </div>
-
-  </div>
-
 </div>
 @endsection
