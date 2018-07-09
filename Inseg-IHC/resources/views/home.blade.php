@@ -24,18 +24,46 @@
 -->
 <div class="container">
   <div class="row">
-    <div class="col-sm-6">
-        <video width="500" height="400" controls autoplay>
-          <source src="https://www.w3schools.com/tags/movie.mp4" type="video/mp4" >
-          Your browser does not support the video tag.
-        </video>
+    <div class="col-sm-4">
+        <div class="embed-responsive embed-responsive-4by3">
+            <iframe class="embed-responsive-item" src="//www.youtube.com/embed/ePbKGoIGAXY"></iframe>
+        </div>
     </div>
-    <div class="col-sm-6">
+    <div class="col-sm-4">
         <!--<h2>4:3 Responsive Aspect Ratio</h2>-->
         <div class="embed-responsive embed-responsive-4by3">
             <iframe class="embed-responsive-item" src="//www.youtube.com/embed/ePbKGoIGAXY"></iframe>
         </div>
     </div>
+    <div class="col-sm-4">
+        <!--<h2>4:3 Responsive Aspect Ratio</h2>-->
+        <div class="embed-responsive embed-responsive-4by3">
+            <iframe class="embed-responsive-item" src="//www.youtube.com/embed/ePbKGoIGAXY"></iframe>
+        </div>
+    </div>
+
   </div>
+  <br><br>
+  <div class="row">
+    <div class="col-sm-4">
+        <div class="embed-responsive embed-responsive-4by3">
+            <iframe class="embed-responsive-item" src="//www.youtube.com/embed/ePbKGoIGAXY"></iframe>
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <!--<h2>4:3 Responsive Aspect Ratio</h2>-->
+        <div class="embed-responsive embed-responsive-4by3">
+            <iframe class="embed-responsive-item" src="//www.youtube.com/embed/ePbKGoIGAXY"></iframe>
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <!--<h2>4:3 Responsive Aspect Ratio</h2>-->
+        <div class="embed-responsive embed-responsive-4by3">
+            <iframe class="embed-responsive-item" src="//www.youtube.com/embed/ePbKGoIGAXY"></iframe>
+        </div>
+    </div>
+
+  </div>
+
 </div>
 @endsection
