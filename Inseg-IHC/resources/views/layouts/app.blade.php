@@ -164,7 +164,7 @@
 
             <br>
               <div class="body-color">
-                @yield('content')   
+                @yield('content')
               </div>
     </div>
 

@@ -43,6 +43,7 @@ body{
 .card{
   border-color: var(--main-nav-color) !important;
   color: var(--main-text-color);
+
 }
 .card .card-header{
   background-color: var(--main-nav-color) !important;
@@ -51,6 +52,10 @@ body{
   background-color: var(--main-bg-color);
 }
 
+
+.video:hover{
+  border: 5px solid var(--main-alert-color) !important;
+}
 
 .text-color{
   color: var(--main-text-color);

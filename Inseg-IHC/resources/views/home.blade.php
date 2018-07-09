@@ -24,18 +24,18 @@
 -->
 <div class="container">
   <div class="row">
-    <div class="col-sm-4">
+    <div class="video col-sm-4">
         <div class="embed-responsive embed-responsive-4by3">
             <iframe class="embed-responsive-item" src="//www.youtube.com/embed/ePbKGoIGAXY"></iframe>
         </div>
     </div>
-    <div class="col-sm-4">
+    <div class="video col-sm-4">
         <!--<h2>4:3 Responsive Aspect Ratio</h2>-->
         <div class="embed-responsive embed-responsive-4by3">
             <iframe class="embed-responsive-item" src="//www.youtube.com/embed/ePbKGoIGAXY"></iframe>
         </div>
     </div>
-    <div class="col-sm-4">
+    <div class="video col-sm-4">
         <!--<h2>4:3 Responsive Aspect Ratio</h2>-->
         <div class="embed-responsive embed-responsive-4by3">
             <iframe class="embed-responsive-item" src="//www.youtube.com/embed/ePbKGoIGAXY"></iframe>
@@ -45,18 +45,18 @@
   </div>
   <br><br>
   <div class="row">
-    <div class="col-sm-4">
+    <div class="video col-sm-4">
         <div class="embed-responsive embed-responsive-4by3">
             <iframe class="embed-responsive-item" src="//www.youtube.com/embed/ePbKGoIGAXY"></iframe>
         </div>
     </div>
-    <div class="col-sm-4">
+    <div class="video col-sm-4">
         <!--<h2>4:3 Responsive Aspect Ratio</h2>-->
         <div class="embed-responsive embed-responsive-4by3">
             <iframe class="embed-responsive-item" src="//www.youtube.com/embed/ePbKGoIGAXY"></iframe>
         </div>
     </div>
-    <div class="col-sm-4">
+    <div class="video col-sm-4">
         <!--<h2>4:3 Responsive Aspect Ratio</h2>-->
         <div class="embed-responsive embed-responsive-4by3">
             <iframe class="embed-responsive-item" src="//www.youtube.com/embed/ePbKGoIGAXY"></iframe>
