@@ -16,6 +16,12 @@ p {
     color: #999;
 }
 
+.pad{
+  font-size: 0.85em !important;
+  padding: 10px !important;
+}
+
+
 a,
 a:hover,
 a:focus {
@@ -85,7 +91,7 @@ a:focus {
 
 #sidebar ul li a {
     padding: 10px;
-    font-size: 1.1em;
+    font-size: 0.85em;
     display: block;
 }
 
@@ -113,7 +119,7 @@ a[data-toggle="collapse"] {
 }
 
 ul ul a {
-    font-size: 0.9em !important;
+    font-size: 0.85em !important;
     padding-left: 30px !important;
     background: #333A42;
 }
@@ -124,7 +130,7 @@ ul.CTAs {
 
 ul.CTAs a {
     text-align: center;
-    font-size: 0.9em !important;
+    font-size: 0.85em !important;
     display: block;
     border-radius: 5px;
     margin-bottom: 5px;
