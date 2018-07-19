@@ -22,7 +22,7 @@
     </div>
 </div>
 -->
-<div class="container">
+<div class="container" id="videos">
   <div class="row">
     <div class="video col-sm-4">
         <div class="embed-responsive embed-responsive-4by3">
@@ -42,6 +42,7 @@
         </div>
 
   </div>
+</div>
   <br><br>
   <div class="row">
     <div class="video col-sm-4">
