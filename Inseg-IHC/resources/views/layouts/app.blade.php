@@ -30,6 +30,7 @@
     <!-- Bootstrap -->
 
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/slider.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- jQuery CDN - Slim version (=without AJAX) -->
@@ -56,57 +57,58 @@
         <nav class="active" id="sidebar">
             <div class="sidebar-header">
                 <h3>Menú de Configuración</h3>
+
             </div>
+            @if(request()->segment(count(request()->segments())) == "home")
 
             <ul class="list-unstyled components">
-                <p>Dummy Heading</p>
+                <p>Configuración de Cámaras</p>
+                <li class="pad">
+                  <input type="checkbox" />
+                  Reordenamiento automático (según actividad)
+                </li>
+                <li class="pad">
+                    Numero de Cámaras
+                    <select name="carlist" form="carform">
+                      <option value="0">0</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                    </select>
+                </li>
                 <li class="active">
-                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a>
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Selección de Cámaras</a>
                     <ul class="collapse list-unstyled" id="homeSubmenu">
-                        <li>
-                            <a href="#">Home 1</a>
-                        </li>
-                        <li>
-                            <a href="#">Home 2</a>
-                        </li>
-                        <li>
-                            <a href="#">Home 3</a>
-                        </li>
+                        <li><a href="#">Camara 1</a></li>
+                        <li><a href="#">Camara 2</a></li>
+                        <li><a href="#">Camara 3</a></li>
+                        <li><a href="#">AÑADIR</a></li>
                     </ul>
                 </li>
-                <li>
-                    <a href="#">About</a>
+                <li class="slidecontainer container pad">
+                  Tamaño de cámaras principales
+                  <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
                 </li>
-                <li>
-                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Pages</a>
-                    <ul class="collapse list-unstyled" id="pageSubmenu">
-                        <li>
-                            <a href="#">Page 1</a>
-                        </li>
-                        <li>
-                            <a href="#">Page 2</a>
-                        </li>
-                        <li>
-                            <a href="#">Page 3</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">Portfolio</a>
-                </li>
-                <li>
-                    <a href="#">Contact</a>
+                <li class="slidecontainer container pad">
+                  Tamaño de cámaras secundarias
+                  <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
                 </li>
             </ul>
 
-            <ul class="list-unstyled CTAs">
+            @endif
+
+
+            <!-- <ul class="list-unstyled CTAs">
                 <li>
                     <a href="https://bootstrapious.com/tutorial/files/sidebar.zip" class="download">Download source</a>
                 </li>
                 <li>
                     <a href="https://bootstrapious.com/p/bootstrap-sidebar" class="article">Back to article</a>
                 </li>
-            </ul>
+            </ul> -->
         </nav>
 
         <!-- Page Content  -->
