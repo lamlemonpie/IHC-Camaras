@@ -1,17 +1,24 @@
 @extends('layouts.app')
 
 @section('content')
+<div class="container">
+  <div id="floating-panel">
+    <button onclick="toggleHeatmap()">Activar Heatmap</button>
+    <button onclick="changeGradient()">Cambiar gradiente</button>
+    <button onclick="changeRadius()">Cambiar radio</button>
+    <button onclick="changeOpacity()">Cambiar opacidad</button>
+  </div>
 
-<div id="map" style="  height: 800px; width: 100%;"></div>
+  <div id="map" style="  height: 800px; width: 100%;"></div>
 
 
-<div id="infowindow-content">
-  <span id="place-name"  class="title"></span><br>
-  <span id="place-id"></span><br>
-  <span id="place-address"></span>
+  <div id="infowindow-content">
+    <span id="place-name"  class="title"></span><br>
+    <span id="place-id"></span><br>
+    <span id="place-address"></span>
+  </div>
+
 </div>
-
-
 <script>
   var latitud = -16.4063615;
   var longitud = -71.5246413;
@@ -36,7 +43,8 @@
 
     heatmap = new google.maps.visualization.HeatmapLayer({
       data: getPoints(),
-      map: map
+      map: map,
+      radius: 25
     });
   }
 
@@ -65,7 +73,7 @@
     }
 
     function changeRadius() {
-      heatmap.set('radius', heatmap.get('radius') ? null : 20);
+      heatmap.set('radius', heatmap.get('radius') ? null : 25);
     }
 
     function changeOpacity() {
@@ -102,7 +110,13 @@
         new google.maps.LatLng(-16.40571, -71.52599),
         new google.maps.LatLng(-16.4057, -71.526),
         new google.maps.LatLng(-16.4057, -71.52601),
-        new google.maps.LatLng(-16.40567, -71.52603)
+        new google.maps.LatLng(-16.40567, -71.52603),
+
+        new google.maps.LatLng(-16.4064950, -71.5246103),
+        new google.maps.LatLng(-16.4064955, -71.5246293),
+        new google.maps.LatLng(-16.4065060, -71.5246388),
+        new google.maps.LatLng(-16.4065065, -71.5246483),
+        new google.maps.LatLng(-16.406507, -71.5246578)
       ];
     }
 
